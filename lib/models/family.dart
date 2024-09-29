@@ -1,13 +1,14 @@
 
 import 'package:the_back/component/item.dart';
 
-class Number extends CategoryItem{
-  Number({required this.image, 
+class Family extends CategoryItem{
+  Family({required this.image, 
   required this.jptext, 
   required this.entext, 
   required this.tapsound,
+  required this.word
   });
-  
+  String word;
   @override
   String image;
   @override
