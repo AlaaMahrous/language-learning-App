@@ -63,8 +63,6 @@ flutter:
   assets:
     - assets/sounds/numbers/
     - assets/sounds/family_members/
-    # BusinessCardApp images
-    - images/birth.png
     # number page images
     - assets/images/numbers/
     # family page images shortcut
