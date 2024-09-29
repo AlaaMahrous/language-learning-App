@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable, avoid_unnecessary_containers
 
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:the_back/models/item.dart';
 
