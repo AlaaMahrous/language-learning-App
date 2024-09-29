@@ -4,9 +4,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:the_back/component/category.dart';
+import 'package:the_back/component/homecategory.dart';
+import 'package:the_back/screens/colorpage.dart';
 import 'package:the_back/screens/familypage.dart';
 import 'package:the_back/screens/numberpage.dart';
+import 'package:the_back/screens/phrasespage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -16,13 +18,6 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> { 
-  List topics = [
-    'Numbers',
-    'Family Members',
-    'Colors',
-    'Phrases', 
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +33,7 @@ class _HomepageState extends State<Homepage> {
       body: Column(
         children: [
           Categoryfac(
-            'Number',
+            'Numbers',
             Colors.blue, 
             (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
@@ -52,6 +47,26 @@ class _HomepageState extends State<Homepage> {
             (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
                 return Familypage();
+              }));
+              
+            }
+          ),
+          Categoryfac(
+            'Colors',
+            Colors.yellow, 
+            (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return ColorPage();
+              }));
+              
+            }
+          ),
+          Categoryfac(
+            'Phrases',
+            Colors.orange, 
+            (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return Phrasespage();
               }));
               
             }
